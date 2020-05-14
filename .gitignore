@@ -1,2 +1,4 @@
 */bin
 */obj
+
+# To save the project in Git Repo, it is best practice to create .gitignore file at top & add the bin & obj file paths to it 

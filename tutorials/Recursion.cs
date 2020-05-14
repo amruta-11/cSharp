@@ -4,6 +4,7 @@ namespace tutorials
 {
     public static class Recursion
     {
+        //This function gets the factorial (!) of 'num'
         public static int GetFactorial (int num)
         {
             if(num == 0)
@@ -30,6 +31,7 @@ namespace tutorials
             }
         }
 
+        //Gets sum. if num = 4 then sum = 5+4+3+2+1 = 15
         public static int GetSum (int num)
         {
             if(num == 0)
@@ -42,6 +44,8 @@ namespace tutorials
             }
         }
 
+
+        // Gets the value. if baseNum=2 & exponent=3 then 2^3= 8
         public static int CalculatePower (int baseNum, int exponent)
         {
             if(exponent == 0)
