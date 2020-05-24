@@ -49,10 +49,41 @@ namespace tutorials
             // Array.DeleteArray(a, 3);
             // Array.Print(a);
 
-            var c = Array.DelCreateNewArr(new int[] {4,3,5,10,9,10}, 3);
-            Array.Print(c);
+            // var c = Array.DelCreateNewArr(new int[] {4,3,5,10,9,10}, 3);
+            // Array.Print(c);
+
+            // var d = Array2D.Create(2,2);
+            // Array2D.Print2D(d);
+
+            // var e = Array.ZerosAndNumbers(15);
+            // Array.Print(e);
+
+            // var f = Array.ReverseTheArray(new int[] {4,3,5,9,10});
+            // Array.Print(f);
+            // Array.Print(Array.ReverseInPlace(new int[] {4,3,5,9,10}));
+            // Console.WriteLine();
+
+            // var g = Array.MergeArray(new int[] {3,5,9}, new int[] {4,6,8,10,12,13});
+            // Array.Print(g);
+
+            // var h = Array2D.CenterZeros(5, 6);
+            // Array2D.Print2D(h);
+
+            // var i = Array2D.Create(3, 3);
+            // Array2D.Print2D(i);
+            // Console.WriteLine();
+            // Array2D.DiagonalFlip(i);
+            // Array2D.Print2D(i);
+
+            var k = Array2D.Create(3, 3);
+            Array2D.Print2D(k);
+            Console.WriteLine();
+            var m = Array2D.DiagonalFlip(k);
+            Array2D.ReverseInPlace(m);
+            Array2D.Print2D(k);
 
         }
+
 
         static int GetSquare(int num1)
         {

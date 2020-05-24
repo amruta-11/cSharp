@@ -2,8 +2,8 @@ using System;
 
 namespace tutorials
 {
-        class Array
-        {
+    class Array
+    {
 
             //Create a new Array
             public static int[] Create(int length)
@@ -22,7 +22,7 @@ namespace tutorials
             {
                 for (int i = 0; i < Arr.Length; i++)
                 {
-                    Console.WriteLine(Arr[i]);
+                    Console.Write(Arr[i] + " ");
                 }
 
             }
@@ -94,5 +94,85 @@ namespace tutorials
                 }
                 return Arr1;
             }  
+        
+        
+        public static int[] ZerosAndNumbers (int SizeOfArray)
+        {
+            int[] Arr1 = new int[SizeOfArray];
+            int n = 1;
+
+            for (int i = 0; i < SizeOfArray; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Arr1[i] = 0;
+                }
+                else
+                {
+                    Arr1[i] = n;
+                     n = n+1;
+                }
+            }
+            return Arr1;
         }
+
+        public static int[] ReverseTheArray (int[] Arr1)
+        {
+            int[] Arr2 = new int[Arr1.Length];            
+
+            for (int i = 0; i < Arr1.Length; i++)
+            {
+                Arr2[i] = Arr1[Arr1.Length- (i+1)];
+            }
+            return Arr2;
+        }
+
+        public static int[] MergeArray (int[] Arr1, int[] Arr2)
+        {
+            int[] Arr3 = new int[Arr1.Length + Arr2.Length];
+            var Index1 = 0;
+            var Index2 = 0;
+
+
+            for (int i3 = 0; i3 < Arr3.Length; i3++)
+            {
+                
+                if (Index1 < Arr1.Length && Index2 < Arr2.Length) 
+                {
+                    if ( Arr1[Index1] > Arr2[Index2])
+                    {
+                        Arr3[i3] = Arr2[Index2];
+                        Index2++;
+                    }
+                    else
+                    {
+                        Arr3[i3] = Arr1[Index1];
+                        Index1++;
+                    }
+                }
+                else if (Index1 < Arr1.Length)
+                {
+                    Arr3[i3] = Arr1[Index1];
+                    Index1++;
+                }
+                else 
+                {
+                    Arr3[i3] = Arr2[Index2];
+                    Index2++;
+                }
+            }
+            return Arr3;
+        }
+            public static int[] ReverseInPlace (int[] Arr1)
+        {            
+            for (int i = 0; i < (Arr1.Length/2); i++)
+            {
+                var a = Arr1[i];
+                var b = Arr1[Arr1.Length - (i+1)];
+                Arr1[i] = b;
+                Arr1[Arr1.Length - (i+1)] = a;
+            }
+            return Arr1;
+        }
+    }
 }
