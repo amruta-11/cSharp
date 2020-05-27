@@ -24,7 +24,6 @@ namespace tutorials
                 {
                     Console.Write(Arr[i] + " ");
                 }
-
             }
 
             // Searching the given number & returning its Index

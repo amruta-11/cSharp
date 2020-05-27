@@ -4,9 +4,10 @@
 // Void when not returning anything
 // Use 'int' when returning an interger & 'string' when returning string
 //Class name should start with a capital letter because C# is case sensitive language
-//When import a class & function into Program.cs always write 'public' in front of it
+//When importing a class & function into Program.cs always write 'public' in front of it
 //Class is collection of similar or related functions. For eg Recursion class has all problems related Recursion. Class name should began with capital letter
 //Namespace is collection of similar or related classes. For eg 'Recursion', 'Array', etc are part of my tutorial so added under namespace 'tutorials'. namespace starts with small letter
+//
 
 using System;
 
@@ -75,13 +76,21 @@ namespace tutorials
             // Array2D.DiagonalFlip(i);
             // Array2D.Print2D(i);
 
-            var k = Array2D.Create(3, 3);
-            Array2D.Print2D(k);
-            Console.WriteLine();
-            var m = Array2D.DiagonalFlip(k);
-            Array2D.ReverseInPlace(m);
-            Array2D.Print2D(k);
+            // var k = Array2D.Create(3, 3);
+            // Array2D.Print2D(k);
+            // Console.WriteLine();
+            // var m = Array2D.DiagonalFlip(k);
+            // Array2D.ReverseInPlace(m);
+            // Array2D.Print2D(k);
 
+            var n = LinkedList.CreateSLL(4);
+            LinkedList.Print(n);
+            LinkedList.AddNode(n, 5);
+            LinkedList.AddNode(n, 6);
+            LinkedList.AddNode(n, 7);
+            LinkedList.AddNode(n, 8);
+            LinkedList.Print(n);
+            
         }
 
 
