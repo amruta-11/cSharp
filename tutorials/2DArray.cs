@@ -1,13 +1,12 @@
 using System; 
 
-//For 2D Array-
-//Array.GetLength(0) = Number of Rows
-//Array.GetLength(1) = Number of Columns
-
 namespace tutorials
 {
     class Array2D
     {
+        //For 2D Array(R X C):
+        //Array.GetLength(0) = Number of Rows
+        //Array.GetLength(1) = Number of Columns
 
         //Create a new 2D Array
         public static int[,] Create(int NumofRows, int NumofCol)
@@ -33,15 +32,13 @@ namespace tutorials
                 for (int j = 0; j < Arr1.GetLength(1); j++)
                 {
                     Console.Write(Arr1[i, j] + " ");
-
                 }
                 Console.Write('\n');
             }
      
         }
 
-
-        //2DArray center elenebts zero & border elements one
+        //2DArray center elements zero & border elements one
         public static int[,] CenterZeros (int r, int c)
         {
             int[,] arr1;
@@ -66,7 +63,6 @@ namespace tutorials
 
         
         //Flipping elements across Diagonal
-
         public static int[,] DiagonalFlip (int[,] Arr1)
         {   
             for (int i = 0; i < Arr1.GetLength(0); i++)

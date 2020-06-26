@@ -7,9 +7,11 @@
 //When importing a class & function into Program.cs always write 'public' in front of it
 //Class is collection of similar or related functions. For eg Recursion class has all problems related Recursion. Class name should began with capital letter
 //Namespace is collection of similar or related classes. For eg 'Recursion', 'Array', etc are part of my tutorial so added under namespace 'tutorials'. namespace starts with small letter
-//
+//static modifier makes an item non-instantiable, it means the static item cannot be instantiated.
 
 using System;
+using System.Collections.Generic;
+
 
 namespace tutorials
 {
@@ -17,44 +19,33 @@ namespace tutorials
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Amy!");
+            //In main function- see below
             // Console.WriteLine(GetSquare(3));
-
             // Console.WriteLine(GetSquare(9));
-            
             // Console.WriteLine(GetProduct(9, 10));
             // Print();
-            
+
+            //From Recursion.cs
             // Console.WriteLine(Recursion.GetFactorial(2));
-            
             // Console.WriteLine(Recursion.FibonacciSeries(6));
-            
             // Console.WriteLine(Recursion.GetSum(10));
-            
             // Console.WriteLine(Recursion.CalculatePower(2, 5));
+
+            //From Array.cs
             // int[] Arr1 = Array.Create(4);
             // Array.Print(Arr1);
             // Array.Print(new int[] {1,5,8,9});
-            
+
             // Console.WriteLine(Array.SearchByIndex(new int[] {2,4,6,7,8}, 7));
-            
+
             // Array.Print(Array.InsertNum(new int[] {2,4,5,6,7,8}, 1, 2));
-            
-            // Console.WriteLine("Enter numbers:");
-            // var a = int.Parse(Console.ReadLine());
-            // var b = int.Parse(Console.ReadLine());
-            // Console.WriteLine(GetProduct(a, b));
-            // Console.ReadKey();
-            
+
             // var a = new int[] {4,3,5,10,9,10};
             // Array.DeleteArray(a, 3);
             // Array.Print(a);
 
             // var c = Array.DelCreateNewArr(new int[] {4,3,5,10,9,10}, 3);
             // Array.Print(c);
-
-            // var d = Array2D.Create(2,2);
-            // Array2D.Print2D(d);
 
             // var e = Array.ZerosAndNumbers(15);
             // Array.Print(e);
@@ -66,6 +57,11 @@ namespace tutorials
 
             // var g = Array.MergeArray(new int[] {3,5,9}, new int[] {4,6,8,10,12,13});
             // Array.Print(g);
+
+
+            //From 2DArray.cs
+            // var d = Array2D.Create(2,2);
+            // Array2D.Print2D(d);
 
             // var h = Array2D.CenterZeros(5, 6);
             // Array2D.Print2D(h);
@@ -83,16 +79,72 @@ namespace tutorials
             // Array2D.ReverseInPlace(m);
             // Array2D.Print2D(k);
 
-            var n = LinkedList.CreateSLL(4);
-            LinkedList.Print(n);
-            LinkedList.AddNode(n, 5);
-            LinkedList.AddNode(n, 6);
-            LinkedList.AddNode(n, 7);
-            LinkedList.AddNode(n, 8);
-            LinkedList.Print(n);
-            
-        }
 
+            //From LinkedList.cs
+            // var SLL = new LinkedList();
+            // SLL.AddLast(20);
+            // SLL.AddFirst(5);
+            // SLL.AddLast(10);
+            // SLL.AddLast(15);
+            // SLL.AddAnywhere(6, 3);
+            // SLL.Print();
+
+            // var SortedList = new LinkedList();
+            // SortedList.AddFirst(12);
+            // SortedList.AddFirst(8);
+            // SortedList.AddFirst(6);
+            // SortedList.AddFirst(4);
+            // SortedList.AddFirst(2);
+            // SortedList.AddToSortedList(5);
+            // var ab = SortedList.SearchValue(1);
+            // Console.WriteLine(ab);
+            // SortedList.Print();
+            // Console.WriteLine();
+            // SortedList.DeleteNode(1);
+            // SortedList.Print();
+
+
+            //From StackArray.cs
+            // var stackarr = new StackArray();
+            // stackarr.CreateStack(6);
+            // stackarr.PushInStack(15);
+            // stackarr.PushInStack(20);
+            // stackarr.PushInStack(43);
+            // stackarr.PushInStack(14);
+            // stackarr.PushInStack(51);
+            // stackarr.PushInStack(100);
+            // stackarr.Print();
+            // Console.WriteLine();
+
+            // Console.WriteLine("Pop Value ="+ stackarr.PopOutOfStack());
+
+            // stackarr.PeekTheStack();
+
+            // Console.Write(stackarr.IsStackFull());
+            // Console.WriteLine();
+
+            // Console.Write(stackarr.IsStackEmpty());
+
+
+
+            //From StackLL.cs
+            var stackLL = new StackLL();
+            stackLL.Push(4);
+            stackLL.Push(8);
+            stackLL.Push(9);
+            stackLL.Push(15);
+
+            stackLL.Print();
+
+            stackLL.Pop();
+
+            stackLL.Print();
+
+            var abc = stackLL.Peek();
+            Console.WriteLine(abc.Value);
+
+            Console.WriteLine(stackLL.IsEmpty());
+        }
 
         static int GetSquare(int num1)
         {
