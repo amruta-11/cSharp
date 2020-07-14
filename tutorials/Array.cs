@@ -15,6 +15,7 @@ namespace tutorials
             }
             return arr1; 
         }
+        //TC = O(1)
 
         //Print an Array
         public static void Print(int[] Arr)
@@ -24,6 +25,7 @@ namespace tutorials
                 Console.Write(Arr[i] + " ");
             }
         }
+        //TC = O(n)
 
         // Searching the given number & returning its Index
         public static int SearchByIndex(int[] Arr, int searchNum)
@@ -37,6 +39,7 @@ namespace tutorials
             }
             throw new Exception("Number Not Found");
         }
+        //TC = O(n)
 
         //Inserting a number at the given index in Array
         public static int[] InsertNum(int[] Arr, int NumtoInsert, int IndexNum)
@@ -56,6 +59,7 @@ namespace tutorials
             }
             return Arr1;
         }
+        //TC = O(n)
 
         //Deleting a value at given index
         public static void DeleteArray (int[] Arr, int IndexNum) {
@@ -75,6 +79,7 @@ namespace tutorials
                 throw new Exception();
             }
         }
+        //TC = O(n)
 
 
         //Deleting a number from array & adding remaining numbers to the new array
@@ -94,7 +99,8 @@ namespace tutorials
                 }
             }
             return Arr1;
-        }  
+        }
+        //TC = O(n)  
     
 
         //Creating array 0, 1, 0, 2, 0, 3, 0, 4.....
@@ -117,6 +123,7 @@ namespace tutorials
             }
             return Arr1;
         }
+        //TC = O(n)
 
         //Reversing the given array
         public static int[] ReverseTheArray (int[] Arr1)
@@ -129,6 +136,7 @@ namespace tutorials
             }
             return Arr2;
         }
+        //TC = O(n)
         
         //Merging & rearranging elements in two arrays in ascending order
         public static int[] MergeArray (int[] Arr1, int[] Arr2)
@@ -165,6 +173,7 @@ namespace tutorials
             }
             return Arr3;
         }
+        //TC = O(n)
 
         //Mirroring the array from center element
             public static int[] ReverseInPlace (int[] Arr1)
@@ -178,5 +187,6 @@ namespace tutorials
             }
             return Arr1;
         }
+        //TC = O(n)
     }
 }

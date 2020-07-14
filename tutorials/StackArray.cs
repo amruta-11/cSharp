@@ -3,6 +3,7 @@ using System;
 namespace tutorials
 {
     class StackArray
+    //Stack - Last in First Out (LIFO)
     {
         //Introducing const topOfStack & an array 'stack' for use in the functions below
         private int topOfStack = -1;

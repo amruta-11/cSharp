@@ -10,7 +10,7 @@
 //static modifier makes an item non-instantiable, it means the static item cannot be instantiated.
 
 using System;
-using System.Collections.Generic;
+// using System.Collections.Generic;
 
 
 namespace tutorials
@@ -128,22 +128,43 @@ namespace tutorials
 
 
             //From StackLL.cs
-            var stackLL = new StackLL();
-            stackLL.Push(4);
-            stackLL.Push(8);
-            stackLL.Push(9);
-            stackLL.Push(15);
+            // var stackLL = new StackLL();
+            // stackLL.Push(4);
+            // stackLL.Push(8);
+            // stackLL.Push(9);
+            // stackLL.Push(15);
+            // stackLL.Print();
+            // stackLL.Pop();
+            // stackLL.Print();
+            // var abc = stackLL.Peek();
+            // Console.WriteLine(abc.Value);
 
-            stackLL.Print();
+            // Console.WriteLine(stackLL.IsEmpty());
+            
+            //From QueueLL.cs
+            // var queue = new QueueLL();
+            // queue.Enqueue(4);
+            // queue.Enqueue(3);
+            // queue.Enqueue(7);
+            // queue.Enqueue(9);
+            // queue.Print();
+            // Console.WriteLine(queue.Dequeue());
+            // queue.Enqueue(11);
+            // Console.WriteLine(queue.Dequeue());
+            // queue.Print();
 
-            stackLL.Pop();
-
-            stackLL.Print();
-
-            var abc = stackLL.Peek();
-            Console.WriteLine(abc.Value);
-
-            Console.WriteLine(stackLL.IsEmpty());
+            //From QueueArray.cs
+            var queue = new tutorials.QueueArray();
+            queue.CreateQueue(5);
+            queue.Enqueue(4);
+            queue.Enqueue(3);
+            queue.Enqueue(7);
+            queue.Enqueue(9);
+            queue.Print();
+            Console.WriteLine(queue.Dequeue());
+            queue.Enqueue(11);
+            Console.WriteLine(queue.Dequeue());
+            queue.Print();
         }
 
         static int GetSquare(int num1)
