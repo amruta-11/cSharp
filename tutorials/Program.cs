@@ -154,17 +154,53 @@ namespace tutorials
             // queue.Print();
 
             //From QueueArray.cs
-            var queue = new tutorials.QueueArray();
-            queue.CreateQueue(5);
-            queue.Enqueue(4);
-            queue.Enqueue(3);
-            queue.Enqueue(7);
-            queue.Enqueue(9);
-            queue.Print();
-            Console.WriteLine(queue.Dequeue());
-            queue.Enqueue(11);
-            Console.WriteLine(queue.Dequeue());
-            queue.Print();
+            // var queue = new tutorials.QueueArray();
+            // queue.CreateQueue(5);
+            // queue.Enqueue(4);
+            // queue.Enqueue(3);
+            // queue.Enqueue(7);
+            // queue.Enqueue(9);
+            // queue.Print();
+            // Console.WriteLine(queue.Dequeue());
+            // queue.Enqueue(11);
+            // Console.WriteLine(queue.Dequeue());
+            // queue.Print();
+
+            // var binTr = new BinaryTA(10);
+            // binTr.Insert(10);
+            // binTr.Insert(2);
+            // binTr.Insert(13);
+            // binTr.Insert(5);
+            // binTr.Insert(70);
+            // binTr.Insert(91);
+            //binTr.InOrderTraversal();
+            // binTr.PreOrderTraversal();
+            // binTr.PostOrderTraversal();
+            // binTr.LeveOrderTraversal();
+            // binTr.DeleteNode(5);
+            // binTr.LeveOrderTraversal();
+
+
+            // var bintree = new BinaryTree();
+            // bintree.Insert(10);
+            // bintree.Insert(20);
+            // bintree.Insert(30);
+            // bintree.Insert(40);
+            // bintree.Insert(50);
+            // bintree.Insert(60);
+            // bintree.Insert(70);
+
+            // bintree.PreOrder();
+            // Console.WriteLine();
+            // bintree.PostOrder();
+            // Console.WriteLine();
+            // bintree.InOrder();
+            // Console.WriteLine();
+            // bintree.LevelOrderTraversal();
+
+            // Console.WriteLine (bintree.Search(80).Data);
+
+            Array.Print(Selectionsort.Sort(new int[] {91,0,1,10,0,-1,100}));
         }
 
         static int GetSquare(int num1)
